@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    var count = 30;
-
     var myQuestions = [
         {
             question: "What is Catwoman's real name?",
@@ -42,7 +40,18 @@ $(document).ready(function(){
     
             correctAnswer: "b"
     
-        } 
+        }, 
+
+        {
+            question: "What is Daredevil's real name?",
+
+            answers: {
+                a: "Martin Murdock",
+                b: "Malachi Murdock",
+                c: "Matthew Murdock",
+
+            }
+        }
     
     
     ]; 
@@ -82,7 +91,7 @@ $(document).ready(function(){
 
     $("#startButton").click(function(){
         counter = setInterval(timer, 1000);
-    
+        var count = 30;
     });
 
     function timer() {
@@ -92,7 +101,7 @@ $(document).ready(function(){
             return;
         }
 
-    $("#timer").html("Time remaining: " + "00:" + "count" + "secs");
+    $("#timer").html("Time remaining: " + "30:");
         }
    
 
@@ -115,6 +124,8 @@ $(document).ready(function(){
     // }
 
     // showQuestions(questions);
+
+    var count = 30;
 
     submitButton.onclick = function(){
         //get all input type radio by attr name using jquery
