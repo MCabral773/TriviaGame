@@ -80,6 +80,11 @@ $(document).ready(function(){
 
     showQuestions(myQuestions);
 
+    $("#startButton").click(function(){
+        counter = setInterval(timer, 1000);
+    
+    });
+
     function timer() {
         count--;
         if (count <= 0) {
